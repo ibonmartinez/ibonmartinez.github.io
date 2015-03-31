@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Primera prueba"
+date:   2015-03-31 16:07:13
+categories: update
+---
+Esta es mi primera prueba con jekyll y github
+
+{% highlight r %}
+niter <- 100
+for (i in 1:niter) {
+  print(i)
+}
+{% endhighlight %}
+
+
+
