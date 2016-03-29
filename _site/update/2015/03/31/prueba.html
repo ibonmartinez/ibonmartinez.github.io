@@ -76,11 +76,159 @@
   <article class="post-content">
     <p>Esta es mi primera prueba con jekyll y github</p>
 
+<p>http://kramdown.gettalong.org/quickref.html</p>
+
 <div class="highlight"><pre><code class="language-r" data-lang="r">niter <span class="o">&lt;-</span> <span class="m">100</span>
 <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> <span class="m">1</span><span class="o">:</span>niter<span class="p">)</span> <span class="p">{</span>
   <span class="kp">print</span><span class="p">(</span>i<span class="p">)</span>
 <span class="p">}</span></code></pre></div>
 
+<p>Plain text<br />
+End a line with two spaces to start a new paragraph.
+<em>italics</em> and <em>italics</em>
+<strong>bold</strong> and <strong>bold</strong>
+superscript^2^ <br />
+~~strikethrough~~</p>
+
+<p><a href="www.rstudio.com">link</a></p>
+
+<h1 id="h1-header">H1 header</h1>
+
+<h2 id="h2-header">H2 header</h2>
+
+<h3 id="h3-header">H3 header</h3>
+
+<h4 id="h4-header">H4 header</h4>
+
+<h5 id="h5-header">H5 header</h5>
+
+<h6 id="h6-header">H6 header</h6>
+
+<p>endash: –<br />
+emdash: —<br />
+ellipsis: …</p>
+
+<p>inline equation:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*} %]]></script>
+
+<p>The following is a math block:</p>
+
+<script type="math/tex; mode=display">5 + 5</script>
+
+<p>But next comes a paragraph with an inline math statement:</p>
+
+<p><script type="math/tex">5 + 5</script></p>
+
+<p>horizontal rule (or slide break): 
+***</p>
+
+<blockquote>
+  <p>block quote</p>
+</blockquote>
+
+<ul>
+  <li>unordered list</li>
+  <li>item 2
+    <ul>
+      <li>sub-item 1</li>
+      <li>sub-item 2
+        <ol>
+          <li>ordered list</li>
+          <li>item 2</li>
+        </ol>
+      </li>
+      <li>sub-item 1</li>
+      <li>sub-item 2</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Table Header</th>
+      <th>Second Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Table Cell</td>
+      <td>Cell 2</td>
+    </tr>
+    <tr>
+      <td>Cell 3</td>
+      <td>Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+    </tr>
+    <tr>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+    </tr>
+    <tr>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Second body</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td>2 line</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Footer row</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tfoot>
+</table>
 
   </article>
 

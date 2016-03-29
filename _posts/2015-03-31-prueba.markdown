@@ -4,7 +4,10 @@ title:  "Primera prueba"
 date:   2015-03-31 16:07:13
 categories: update
 ---
+
 Esta es mi primera prueba con jekyll y github
+
+http://kramdown.gettalong.org/quickref.html
 
 {% highlight r %}
 niter <- 100
@@ -13,5 +16,90 @@ for (i in 1:niter) {
 }
 {% endhighlight %}
 
+Plain text  
+End a line with two spaces to start a new paragraph.
+*italics* and _italics_
+**bold** and __bold__
+superscript^2^   
+~~strikethrough~~  
+
+[link](www.rstudio.com)
+
+# H1 header
+
+## H2 header
+
+### H3 header
+
+#### H4 header
+
+##### H5 header
+
+###### H6 header
+
+endash: --  
+emdash: ---  
+ellipsis: ...  
+
+inline equation: 
 
 
+$$
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+$$
+
+The following is a math block:
+
+$$ 5 + 5 $$
+
+But next comes a paragraph with an inline math statement:
+
+\$$ 5 + 5 $$
+
+
+horizontal rule (or slide break): 
+*** 
+
+> block quote
+
+* unordered list 
+* item 2 
+    + sub-item 1 
+    + sub-item 2 
+1. ordered list 
+2. item 2 
+    + sub-item 1 
+    + sub-item 2 
+
+Table Header  | Second Header 
+------------- | ------------- 
+Table Cell    | Cell 2
+Cell 3        | Cell 4
+
+
+
+|-----------------+------------+-----------------+----------------|
+| Default aligned |Left aligned| Center aligned  | Right aligned  |
+|-----------------|:-----------|:---------------:|---------------:|
+| First body part |Second cell | Third cell      | fourth cell    |
+| Second line     |foo         | **strong**      | baz            |
+| Third line      |quux        | baz             | bar            |
+|-----------------+------------+-----------------+----------------|
+| Second body     |            |                 |                |
+| 2 line          |            |                 |                |
+|=================+============+=================+================|
+| Footer row      |            |                 |                |
+|-----------------+------------+-----------------+----------------|
