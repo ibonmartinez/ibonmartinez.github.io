@@ -50,3 +50,23 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+
+/* EXPERIENCIA LABORAL */
+
+#experience {
+}
+#experience:hover {
+   background-color: #EEEEEE;
+}
+#experience .place {
+  font-weight: bold;
+}
+#experience .description {
+}
+#experience .fulldescription {
+    /*color: #808080;*/
+    color: var(--cuandopasaraton);
+    font-style: italic;
+    font-size: 90%;
+}
